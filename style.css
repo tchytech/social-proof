@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --magenta: hsl(300, 43%, 22%);
+    --pink: hsl(333, 80%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-magenta: hsl(303, 10%, 53%);
+    --Light-magenta: hsl(300, 24%, 96%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Spartan', sans-serif;
+  background-image: url('/images/bg-pattern-top-desktop.svg');
+  font-size: 15px;
+}
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+.section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.section h1{
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--magenta);
+}
+.section p{
+  font-size: .9rem;
+  color: var(--Dark-magenta);
+
+}
+.social-proof-rating{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--Light-magenta);
+  padding: .7rem 1.5rem;
+  margin-bottom: .8rem;
+  align-items: center;
+  border-radius: 10px;
+}
+.rating-1{
+  margin-right: 1rem;
+}
+.rating-2{
+  margin-left: 1rem;
+}
+.rating-3{
+  margin-left: 2rem;
+}
+.bottom{
+  margin-top: 50px;
+  background-image: url('/images/bg-pattern-bottom-desktop.svg');
+}
+.testimonals{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  width: 300px;
+  height: 200px;
+  margin-right: 1rem;
+  padding: 20px 15px;
+  border-radius: 8px;
+  background-color: var(--magenta);
+}
+.card-img{
+  display: flex;
+  align-items: center;
+}
+.card img{
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 100px;
+}
+.card h4{
+  font-family: .4rem;
+  margin-bottom: 3px;
+  color: var(--White);
+}
+.card h5{
+  font-size: .6rem;
+  color: var(--pink);
+}
+.report p{
+  font-size: .8rem;
+  color: var(--Light-magenta);
+  line-height: 1.3rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.card-2{
+  margin-top: 1rem;
+}
+.card-3{
+  margin-top: 2rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: .7rem;
+    font-size: 1.5rem;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  
+}
+@media screen and (max-width:375px){
+  .section h1{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-image: url('/images/bg-pattern-top-mobile.svg');
+  }
+  .section p{
+    font-size: .5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating-2{
+    margin-left: 0;
+  }
+  .rating-3{
+    margin-left: 0;
+  }
+  
+  .social-proof{
+    margin-right: 0;
+
+  }  
+  .social-proof-rating{
+    justify-content: center;
+  }
+  .testimonals{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .card{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .bottom{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-image: url('/images/bg-pattern-bottom-mobile.svg');
+    background-position: bottom;
+  }
+}
